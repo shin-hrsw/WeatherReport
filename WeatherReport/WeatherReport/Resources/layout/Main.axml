@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-<Button  
-    android:id="@+id/MyButton"
-    android:layout_width="match_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/Hello"
-    />
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <TextView
+    android:id="@+id/Header"
+    android:text="天気予報"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:padding="5dp"
+  />
+  <ListView
+    android:id="@+id/PrefList"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  />
 </LinearLayout>
